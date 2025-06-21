@@ -1,0 +1,288 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, rect {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111125;
+}
+.payment-title {
+    text-align: center;
+    
+}
+
+.payment-title h1 {
+  font-size:33px;
+  text-align:center;
+  color: white;
+  margin-bottom: 1px;
+}
+
+.payment-wapper-body {
+  display: flex;
+  justify-content: center;
+  background-color: #111125;
+  min-height: 100vh;
+  align-items: center;
+  padding: 6rem 1rem 2rem;
+}
+
+.payment-navigation {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+   font-family: Arial, sans-serif;
+   z-index: 1000;
+   padding: 45px 90px;
+}
+.payment-navigation p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 32;
+  background: linear-gradient(90deg, #687AE4, #764EA7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent;
+  cursor:default;
+}
+
+.payment-wapper {
+  width: 520px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(40px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #1f1f32;
+  border-radius: 20px;
+  padding: 30px 40px;
+}
+.payment-subtitle{
+    color: #B2B2B2;
+    text-align: center;
+    margin-bottom: 30px;
+    cursor:default;
+
+}
+.payment-subtitle p {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #B2B2B2;
+
+}
+.payment-amount {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor:default;
+
+}
+.payment-amount p {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.payment-button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #6977E0, #7551AA);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: medium;
+} 
+.payment-input-box {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+
+}
+.payment-input-box label {
+    color: #B2B2B2;
+    display: flex;
+    flex-direction: column;
+}
+.payment-input-box input {
+  width:100%;
+  height:45px;
+  background: transparent;
+  outline:none;
+  border: 2px solid rgba(255,255,255,.2);
+  border-radius: 10px;
+  font-size:16px;
+  color:#fff;
+  padding:20px 45px 20px 50px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  flex: 1;
+  background-color: #2C2C3E;
+}
+
+.payment-input-icon {
+  position: absolute;
+  left: 14px;
+  top: 75%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+
+.payment-input-icon svg {
+  height: 25px;
+  width: 25px;
+}
+.payment-input-payicon svg {
+  height: 23px;
+  width: 23px;
+  padding-left: 5px;
+}
+
+.payment-input-payicon {
+  position: absolute;
+  right: 14px;
+  top: 75%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+
+.payment-input-payiconcvv {
+  position: absolute;
+  right: 55px;
+  top: 54%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+
+.payment-card-input-box ,.payment-country-box {
+  position: relative;
+  margin-top: 2rem;
+}
+.payment-card-input-box label,.payment-country-box label {
+    color: #B2B2B2;
+    display: flex;
+    flex-direction: column;
+}
+.payment-card-input-box input {
+  width:100%;
+  height:45px;
+  background: transparent;
+  outline:none;
+  border: 2px solid rgba(255,255,255,.2);
+  font-size:16px;
+  color:#fff;
+  padding:20px 45px 20px 14px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transition: border-color 0.3s ease;
+  flex: 1;
+  background-color: #2C2C3E;
+}
+.payment-cvv-date-box input {
+  width:100%;
+  height:45px;
+  background: transparent;
+  outline:none;
+  border: 2px solid rgba(255,255,255,.2);
+  font-size:16px;
+  color:#fff;
+  padding:20px 45px 20px 14px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #2C2C3E;
+  border-bottom-left-radius: 10px;
+}
+
+.payment-cvv-box input{
+  width:100%;
+  height:45px;
+  background: transparent;
+  outline:none;
+  border: 2px solid rgba(255,255,255,.2);
+  font-size:16px;
+  color:#fff;
+  padding:20px 45px 20px 14px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #2C2C3E;
+  border-bottom-right-radius: 10px;
+
+}
+
+.payment-cvv-date-wapper {
+  display: flex;
+}
+
+.payment-country-box select {
+  width:100%;
+  height:45px;
+  background: transparent;
+  outline:none;
+  border: 2px solid rgba(255,255,255,.2);
+  font-size:16px;
+  color:#fff;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #2C2C3E;
+  padding: 20px 45px 20px 40px;
+} 
+
+.payment-country-box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.payment-country-box select {
+  padding:12px 45px 20px 50px;
+  border-radius: 8px;
+  background-color: #2c2c3f;
+  border: 1px solid #ccc;
+  color:  #B2B2B2;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.payment-country-box select:focus,.payment-input-box input:focus,
+.payment-card-input-box input:focus,
+.payment-cvv-box input:focus,.payment-cvv-date-box input:focus {
+  border-color: #7c88ff; 
+}
+
+.payment-country-box select option {
+  background-color: #2c2c3f;
+  color: #B2B2B2;
+}
+
+.payment-error {
+  color: red;
+  font-size: 0.8rem;
+  height: 1px; 
+  margin-top: 1px;
+  display: block;
+}

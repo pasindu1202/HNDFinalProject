@@ -10,6 +10,7 @@ import { CiMobile1 } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import { TfiLock } from "react-icons/tfi";
+import { useNavigate } from 'react-router-dom';
 
 
 type SignInFormInputs = {
@@ -19,9 +20,6 @@ type SignInFormInputs = {
   designation: string;
   mobile: number;
   location: string;
-
-
-
 };
 
 const SignUp = () => {
@@ -29,21 +27,15 @@ const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm<SignInFormInputs>();
     const [showPassword1, setShowPassword1] = useState(false);
     const [showPassword2, setShowPassword2] = useState(false);
+    const navigate = useNavigate();
 
-    const onSubmit = async (data: SignInFormInputs) => {
-    try {
-      if (data.email === 'admin@gmail.com' && data.password === '1234') {
-       
-      }
-      
-      else{
-        alert("Invalid Credentials")
-      }
-      
-    } catch (error: any) {
-      alert("Sign up failed: " + error.message);
-    }
-  };
+    
+const onSubmit = (data: SignInFormInputs) => {
+        
+        console.log(data);
+        
+        navigate("/payment");
+    };
 
 
 
