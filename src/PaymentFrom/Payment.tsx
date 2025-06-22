@@ -176,15 +176,18 @@ const Payment = () => {
                     {errors.country && <p className="payment-error">{errors.country.message || '\u00A0'}</p>}
                  </div>
 
+                 <div className='payment-message'>
+                    <p>By clicking Pay,you agree to the Link Terms and Privacy</p>
+                 </div>
+
                  <button type="submit" className='payment-button'>Pay Now</button>
+
 
             </form>
         </div>
 
-
-        
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Payment;
