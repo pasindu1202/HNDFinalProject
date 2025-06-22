@@ -125,6 +125,7 @@ body, rect {
   outline: none;
   transition: border-color 0.3s ease;
   flex: 1;
+  background-color: #2C2C3E;
 }
 .signup-input-wrapper {
   position: relative;
@@ -169,6 +170,7 @@ body, rect {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  font-size: medium;
 }
 
 .signup-error {
@@ -196,3 +198,7 @@ body, rect {
   text-decoration-color: #4370EA;
   text-decoration-thickness: 2px;
 }
+.signup-input-box input:focus {
+  border-color: #7c88ff; 
+}
+
