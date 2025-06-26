@@ -40,7 +40,8 @@ body, rect {
    align-items: center;
    font-family: Arial, sans-serif;
    z-index: 1000;
-   padding: 45px 90px;
+   padding: 40px 40px 20px 40px;
+   background-color: #111125;
 }
 .payment-navigation p {
   font-size: 20px;
