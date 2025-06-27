@@ -40,38 +40,13 @@ const LoginForm: React.FC = () => {
 
   return (
     <div className='wrapper-body'>
-      {/* <div className='navigation'>
-        <p>CVScreen</p>
-        <div className="nav-buttons">
-        <Link to="/home">
-          <button className={location.pathname === "/home" ? "nav-btn active" : "nav-btn"}>Home</button>
-        </Link>
-
-        <Link to="/signin">
-          <button className={location.pathname === "/signin" ? "nav-btn active" : "nav-btn"}>Sign In </button>
-        </Link>
-         
-        </div>
-      </div> */}
-
       <div className="navigation">
       <p>CVScreen</p>
-
-      <div className="nav-buttons">
-        <Link to="/home" className={`nav-btn-home ${location.pathname === "/home" ? "active" : ""}`}>Home</Link>
+     <div className="nav-buttons">
+        <Link to="/hpage" className={`nav-btn-home ${location.pathname === "/hpage" ? "active" : ""}`}>Home</Link>
         <Link to="/" className={`nav-btn-signin ${location.pathname === "/" ? "active" : ""}`}>Sign In</Link>
-        {/* <Link to="/">
-          <button
-            className={`nav-btn-signin ${
-              location.pathname === "/" ? "active" : ""
-            }`}
-          >
-            Sign In
-          </button>
-        </Link> */}
       </div>
     </div>
-
 
 
       <div className='wrapper'>

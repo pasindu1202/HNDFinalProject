@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LoginForm from './LoginFrom/LoginFrom';
 import SignUp from './SignUpForm/SignUp';
 import Payment from './PaymentFrom/Payment';
+import HomePage from './HomePage/HomePage'; 
+
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<LoginForm />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/hpage" element={<HomePage />} />
+       
       </Routes>
     </BrowserRouter>
     

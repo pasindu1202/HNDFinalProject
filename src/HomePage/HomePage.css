@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, rect {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111125;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+  padding: 45px 90px;
+}
+
+.navigation p {
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 40px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #687AE4, #764EA7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent;
+  cursor: default;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 60px;
+  padding-right: 60px;
+}
+
+.nav-btn-home, .nav-btn-signin {
+  background: transparent;
+  color: #b2b2b2;
+  border: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-buttons .active {
+  background-color: #323252;
+  color: #7C88FF;
+  font-weight: 600;
+}
+
+.nav-btn-home:hover,
+.nav-btn-signin:hover {
+  background-color: #1C1F3C;
+  color: #7C88FF;
+}
+
+.homepage {
+  display: flex;
+  justify-content: center;
+  background-color: #111125;
+  min-height: 100vh;
+  align-items: center;
+  padding: 6rem 1rem 2rem;
+}
+
+/* .homepage .container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #FFFF;
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(40px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-top: 3rem;
+  transform: translateX(-40px);
+} */
+
+.card {
+  background-color: #1F1F32;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.text-area {
+  background-color: #2b2b4a;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  text-align: left;
+  color: #bbb;
+  margin-bottom: 60px;
+}
+
+textarea {
+  width: 100%;
+  padding: 20px;
+  background-color: #2b2b4a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  resize: vertical;
+  height: 120px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.analyze-button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 32px;
+  background: linear-gradient(to right, #6977E0, #7551AA);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.analyze-button:hover {
+  opacity: 0.9;
+}
+
+/* Reuse drop-area styles */
+.drop-area {
+  background-color: #2b2b4a;
+  border: 2px dotted #5f5fff;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  color: #bbb;
+  min-height: 120px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.drop-area.uploaded {
+  border-style: dotted;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Uploaded CV container with white border */
+.uploaded-cv-container {
+  background-color: #2C2C3E;
+  border-radius: 10px;
+  padding: 12px 16px;
+  border: 2px solid white;  /* White border for uploaded CV container */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 80%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+/* Upload card for general styling */
+.upload-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 6px;
+  background-color: #444;
+  border-radius: 4px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4d7cff; /* Blue color */
+  transition: width 0.3s ease;
+}
+
+
+.pdf-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.file-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: left;
+}
+
+.file-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-meta {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 4px;
+}
+
+.upload-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+}
+
+.check-icon {
+  color: #00ff88;
+}
+
+.trash-icon {
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.trash-icon:hover {
+  color: #ff4444;
+}
