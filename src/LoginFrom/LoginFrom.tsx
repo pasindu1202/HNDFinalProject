@@ -79,13 +79,12 @@ const LoginForm: React.FC = () => {
           </div>
           <button type="submit" className='login-button'>Sign in</button>
 
-          <hr style={{ margin: '20px 0' }} />
-
 
           <div className="register-link">
             <p>Don't have an account? <Link to="/signup" className='register-link-text'>Sign Up</Link></p>
             <Link to="/forgot-password" className='register-link-text'>Forgot your password?</Link>
           </div>
+          
         </form>
       </div>
     </div>

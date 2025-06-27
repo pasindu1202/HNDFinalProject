@@ -5,7 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LoginForm from './LoginFrom/LoginFrom';
 import SignUp from './SignUpForm/SignUp';
 import Payment from './PaymentFrom/Payment';
-import HomePage from './HomePage/HomePage'; 
+import Dashboard from './Dashboard/Dashboard';
+
 
 
 function App() {
@@ -15,8 +16,7 @@ function App() {
         <Route path="/" element={<LoginForm />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/payment" element={<Payment />} />
-        <Route path="/hpage" element={<HomePage />} />
-       
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
     

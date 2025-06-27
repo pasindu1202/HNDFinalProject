@@ -40,7 +40,8 @@ body, rect {
    align-items: center;
    font-family: Arial, sans-serif;
    z-index: 1000;
-   padding: 45px 90px;
+   padding: 40px 40px 20px 40px;
+   background-color: #111125;
 }
 .payment-navigation p {
   font-size: 20px;
@@ -165,7 +166,7 @@ body, rect {
 .payment-input-payiconcvv {
   position: absolute;
   right: 55px;
-  top: 54%;
+  top: 50%;
   transform: translateY(-50%);
   color: #ffffff;
 }
@@ -277,6 +278,12 @@ body, rect {
 .payment-country-box select option {
   background-color: #2c2c3f;
   color: #B2B2B2;
+}
+.payment-message{
+  color: #B2B2B2;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
 }
 
 .payment-error {
