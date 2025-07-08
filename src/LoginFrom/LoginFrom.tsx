@@ -40,9 +40,9 @@ const LoginForm: React.FC = () => {
 
   return (
     <div className='wrapper-body'>
-      <div className="navigation">
+      <div className="login-navigation">
       <p>CVScreen</p>
-     <div className="nav-buttons">
+     <div className="login-nav-buttons">
         <Link to="/hpage" className={`nav-btn-home ${location.pathname === "/hpage" ? "active" : ""}`}>Home</Link>
         <Link to="/" className={`nav-btn-signin ${location.pathname === "/" ? "active" : ""}`}>Sign In</Link>
       </div>

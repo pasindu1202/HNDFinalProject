@@ -9,6 +9,7 @@ import Dashboard from './Dashboard/Dashboard';
 import HomePage from './HomePage/HomePage';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import CVAnalyzer from './CVAnalyzer/CVAnalyzer';
 
 
 const stripePromise = loadStripe("APIKey"); 
@@ -33,6 +34,7 @@ function App() {
 
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/hpage" element={<HomePage/>}/>
+        <Route path="/cv-analyzer" element={<CVAnalyzer/>}/>
       </Routes>
     </BrowserRouter>
     

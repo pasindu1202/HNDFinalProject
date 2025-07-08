@@ -67,7 +67,7 @@ rect {
     text-decoration: none;
 }
 
-.dashboard-nav-buttons .active {
+.dashboard-nav-buttons.active,.dashboard-analytics-button.active,.dashboard-cv-analyzer-button.active ,.nav-buttons-text.active {
     color: #fff;
     background-color: #687AE4;
 }
@@ -129,7 +129,7 @@ rect {
     border-radius: 20px;
     padding: 20px;
     color: #fff;
-    margin-inline: 23px;
+    margin-inline: 10px;
     margin-top: 20px;
 }
 

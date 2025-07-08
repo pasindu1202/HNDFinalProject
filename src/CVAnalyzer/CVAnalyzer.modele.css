@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,rect{
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #111125;
+}
+.cv-analyzer-body{
+    display: flex;
+    justify-content: center;
+    background-color: #111125;
+    align-items: center;
+    padding: 7rem 1rem 2rem;
+    flex-direction: column;
+}
+.cv-analyzer-navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 40px 40px 20px 40px;
+    background-color: #111125;
+}
+.cv-analyzer-navigation p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 32;
+    background: linear-gradient(90deg, #687AE4, #764EA7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    cursor: default;
+}
+.cv-analyzer-nav-buttons{
+    display: flex;
+    gap: 60px;
+}
+.cv-nav-buttons-text{
+    background: transparent;
+    color: #b2b2b2;
+    border: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-decoration: none;
+}
+.cv-analyzer-nav-buttons .active,.cv-analytics-button.active,.cv-analyzer-button.active{
+    color:#fff;
+    background-color:#687AE4
+}
+.cv-nav-buttons-text:hover{
+    background-color: #1C1F3C;
+    color: #7C88FF;
+}
+.cv-analyzer-main-mover{
+    width: 320px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #1f1f32;
+    border-radius: 20px;
+    padding: 10px 10px;
+    display: flex;
+    margin-bottom: 60px;
+
+}
+.cv-analytics-button,.cv-analyzer-button{
+    width: 100%;
+    background: transparent;
+    color: #b2b2b2;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-decoration: none;
+    border-color: #fff;
+    margin-inline: 10px;
+}
+.cv-analytics-button:hover,.cv-analyzer-button:hover{
+    background-color: #4370EA;
+    color: white;
+}
