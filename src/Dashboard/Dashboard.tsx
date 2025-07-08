@@ -19,11 +19,11 @@ const Dashboard = ({ }) => {
   const navigate = useNavigate();
 
   const goToAnalytics = () => {
-    navigate('');
+    navigate('/dashboard');
 
   }
   const goToCVAnalyzer = () => {
-    navigate('');
+    navigate('/cv-analyzer');
 
   }
 
@@ -297,6 +297,8 @@ const Dashboard = ({ }) => {
 
     
 
+    
+
 
 
   return (
@@ -310,8 +312,8 @@ const Dashboard = ({ }) => {
         </div>
       </div>
       <div className='dashboard-main-mover'>
-        <button className='dashboard-analytics-button' onClick={goToAnalytics}>Analytics</button>
-        <button className='dashboard-cv-analyzer-button' onClick={goToCVAnalyzer}>CV Analyzer</button>
+        <button className={`dashboard-analytics-button ${location.pathname === "/dashboard" ? "active" : ""}`} onClick={goToAnalytics}>Analytics</button>
+        <button className={`dashboard-cv-analyzer-button ${location.pathname === "/cv-analyzer" ? "active" : ""}`} onClick={goToCVAnalyzer}>CV Analyzer</button>
       </div>
 
 
