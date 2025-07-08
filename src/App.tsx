@@ -7,6 +7,11 @@ import SignUp from './SignUpForm/SignUp';
 import Payment from './PaymentFrom/Payment';
 import Dashboard from './Dashboard/Dashboard';
 import HomePage from './HomePage/HomePage';
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+
+
+const stripePromise = loadStripe("APIKey"); 
 
 
 
@@ -16,7 +21,16 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginForm />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/payment" element={<Payment />} />
+        
+        {/* <Route path='/payment' element={<Elements stripe={stripePromise}><Payment/></Elements>}/> */}
+        {/* <Elements stripe={stripePromise}>
+          
+           <Route path="/payment" element={<Payment />} />
+
+        </Elements> */}
+
+        <Route path="/payment" element={<Elements stripe={stripePromise}><Payment /></Elements>} />
+
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/hpage" element={<HomePage/>}/>
       </Routes>
