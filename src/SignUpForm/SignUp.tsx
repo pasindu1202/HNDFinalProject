@@ -45,7 +45,7 @@ const onSubmit = (data: SignInFormInputs) => {
         <div className='signup-navigation'>
             <p>CVScreen</p>
             <div className='signup-nav-buttons'>
-                <Link to="/homepage" className={`signup-nav-btn-home ${location.pathname === "/homepage" ? "active" : ""}`}>Home</Link>
+                <Link to="/hpage" className={`signup-nav-btn-home ${location.pathname === "/hpage" ? "active" : ""}`}>Home</Link>
                 <Link to="/" className={`signup-nav-btn-signin ${location.pathname === "/" ? "active" : ""}`}>Sign In</Link>
 
             </div>
