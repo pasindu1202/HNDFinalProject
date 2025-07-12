@@ -40,38 +40,13 @@ const LoginForm: React.FC = () => {
 
   return (
     <div className='wrapper-body'>
-      {/* <div className='navigation'>
-        <p>CVScreen</p>
-        <div className="nav-buttons">
-        <Link to="/home">
-          <button className={location.pathname === "/home" ? "nav-btn active" : "nav-btn"}>Home</button>
-        </Link>
-
-        <Link to="/signin">
-          <button className={location.pathname === "/signin" ? "nav-btn active" : "nav-btn"}>Sign In </button>
-        </Link>
-         
-        </div>
-      </div> */}
-
-      <div className="navigation">
+      <div className="login-navigation">
       <p>CVScreen</p>
-
-      <div className="nav-buttons">
-        <Link to="/home" className={`nav-btn-home ${location.pathname === "/home" ? "active" : ""}`}>Home</Link>
+     <div className="login-nav-buttons">
+        <Link to="/hpage" className={`nav-btn-home ${location.pathname === "/hpage" ? "active" : ""}`}>Home</Link>
         <Link to="/" className={`nav-btn-signin ${location.pathname === "/" ? "active" : ""}`}>Sign In</Link>
-        {/* <Link to="/">
-          <button
-            className={`nav-btn-signin ${
-              location.pathname === "/" ? "active" : ""
-            }`}
-          >
-            Sign In
-          </button>
-        </Link> */}
       </div>
     </div>
-
 
 
       <div className='wrapper'>
@@ -104,13 +79,12 @@ const LoginForm: React.FC = () => {
           </div>
           <button type="submit" className='login-button'>Sign in</button>
 
-          <hr style={{ margin: '20px 0' }} />
-
 
           <div className="register-link">
             <p>Don't have an account? <Link to="/signup" className='register-link-text'>Sign Up</Link></p>
             <Link to="/forgot-password" className='register-link-text'>Forgot your password?</Link>
           </div>
+          
         </form>
       </div>
     </div>

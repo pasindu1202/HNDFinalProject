@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+rect {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #111125;
+}
+
+
+.dashboard-wapper-body {
+    Display: flex;
+    justify-content: center;
+    background-color: #111125;
+    align-items: center;
+    padding: 7rem 1rem 2rem;
+    flex-direction: column;
+}
+
+.dashboard-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 40px 40px 20px 40px;
+    background-color: #111125;
+   
+}
+
+.dashboard-navigation p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 32;
+    background: linear-gradient(90deg, #687AE4, #764EA7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    cursor: default;
+}
+
+.dashboard-nav-buttons {
+    display: flex;
+    gap: 60px;
+}
+
+.nav-buttons-text {
+    background: transparent;
+    color: #b2b2b2;
+    border: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.dashboard-nav-buttons.active,.dashboard-analytics-button.active,.dashboard-cv-analyzer-button.active ,.nav-buttons-text.active {
+    color: #fff;
+    background-color: #687AE4;
+}
+
+.nav-buttons-text:hover {
+    background-color: #1C1F3C;
+    color: #7C88FF;
+}
+
+.dashboard-main-mover {
+    width: 320px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #1f1f32;
+    border-radius: 20px;
+    padding: 10px 10px;
+    display: flex;
+
+}
+
+.dashboard-analytics-button,
+.dashboard-cv-analyzer-button {
+    width: 100%;
+    background: transparent;
+    color: #b2b2b2;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-decoration: none;
+    border-color: #fff;
+    margin-inline: 10px;
+}
+
+.dashboard-analytics-button:hover,
+.dashboard-cv-analyzer-button:hover {
+    background-color: #4370EA;
+    color: white;
+}
+
+.dashboard-cards-wapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.dashboard-card {
+    width: 300px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #1f1f32;
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff;
+    margin-inline: 10px;
+    margin-top: 20px;
+}
+
+.dashboard-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #B2B2B2;
+    padding-top: 15px;
+}
+
+.card-icon {
+    position: absolute;
+    right: 30px;
+    top: 65%;
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+
+.card-icon svg {
+    height: 30px;
+    width: 30px;
+}
+
+.dashboard-bar-wrapper {
+    display: list-item;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.dashboard-bar-chart {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #1f1f32;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.dashboard-bar-chart label {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 50px;
+
+}
+
+.dashboard-donut-chart-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+
+}
+
+.dashboard-donut-chart {
+    width: 30%;
+    height: 280px;
+    justify-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #1f1f32;
+    border-radius: 20px;
+    padding: 20px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.dashboard-donut-chart label {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.donut-table-wapper {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.analyze-history-table {
+    height: 280px;
+    justify-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #1f1f32;
+    border-radius: 20px;
+    padding: 20px;
+    color: #ffffff;
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+.analyze-history-wrapper {
+    width: 70%;
+    height: 280px;
+}
+
+
+.analyze-history-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.analyze-history-table label {
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 50px;
+
+
+}
+
+.analyze-history-table th,
+.analyze-history-table td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+}
+
+.analyze-history-table th {
+    background-color: transparent;
+
+}
+
+.status {
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 30px;
+}
+
+.status.matched {
+  background-color: #0faa33;
+  color: #ffffff;
+}
+
+.status.pending {
+  background-color: #ffc505;
+  color: #ffffff;
+}
+
+.status.rejected {
+  background-color: #ff0015;
+  color: #ffffff;
+}
