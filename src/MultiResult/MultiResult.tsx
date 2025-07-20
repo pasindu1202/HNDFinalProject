@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
-import './ProfileForm.css';
+import './MultiResult.css';
 
 interface Candidate {
   id: number;
@@ -61,7 +61,7 @@ const candidates: Candidate[] = [
   },
 ];
 
-const ProfileForm: React.FC = () => {
+const MultiResult: React.FC = () => {
   const location = useLocation();
 
   return (
@@ -124,4 +124,4 @@ const ProfileForm: React.FC = () => {
   );
 };
 
-export default ProfileForm;
+export default MultiResult;
