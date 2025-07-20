@@ -26,6 +26,12 @@ const CVAnalyzer: React.FC = () => {
 
   const { register, handleSubmit, formState: { errors } } = useForm<CVAnalyzerInputs>();
 
+  const nav = () =>{
+
+    //test
+
+  }
+
   // CV Upload States
   const [cvFiles, setCvFiles] = useState<FileWithProgress[]>([]);
   const [cvUploadingIndex, setCvUploadingIndex] = useState<number>(0);
