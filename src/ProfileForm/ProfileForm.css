@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, rect {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111125;
+}
+
+.profile-wrapper {
+  padding-top: 100px;
+}
+
+/* Navigation */
+.profile-navigation {
+  position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+   font-family: Arial, sans-serif;
+   z-index: 1000;
+   padding: 40px 40px 20px 40px;
+   background-color: #111125;
+}
+
+.profile-navigation p {
+   font-size: 20px;
+  font-weight: bold;
+  margin-left: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 32;
+  background: linear-gradient(90deg, #687AE4, #764EA7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent;
+  cursor:default;
+}
+
+.profile-nav-buttons {
+  display: flex;
+  gap: 60px;
+  padding-right: 60px;
+}
+
+.nav-btn {
+  background: transparent;
+  color: #b2b2b2;
+  border: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-btn.active {
+  background-color: #323252;
+  color: #7C88FF;
+  font-weight: 600;
+}
+
+.nav-btn:hover {
+  background-color: #1C1F3C;
+  color: #7C88FF;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #23243C;
+  width: 600px;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border: 1px dashed #5e5eb9;
+  margin: 80px auto 0px auto;
+ }
+
+
+.profile-header { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 480px;
+}
+
+.profile-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 20px;
+}
+
+.profile-info {
+  flex-grow: 1;
+  margin-left: 0px;
+}
+
+.profile-info h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.job-title {
+  font-size: 14px;
+  color: #B2B2B2;
+  margin: 0;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.email,
+.phone,
+.location {
+  font-size: 14px;
+  color: #B2B2B2;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.email svg,
+.phone svg,
+.location svg {
+  color: #B2B2B2; /* Make icon white */
+  font-size: 14px;
+}
+
+
+
+.icon-text {
+  display: flex;
+  align-items: center; /* This vertically centers icon & text */
+  gap: 8px;
+  font-size: 14px;
+  color: #B2B2B2;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+}
+
+.icon-text svg {
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px; /* Ensure there's no extra top offset */
+  line-height: 1;
+}
+
+.edit-btn {
+  background-color: #7c5cc4;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+/* Change Password Form */
+.change-password-form {
+  width: 510px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(40px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #1f1f32;
+  border-radius: 20px;
+  padding: 30px 40px;
+  margin: 3rem auto;
+}
+
+h3 {
+  font-size: 15px;
+  text-align: left;
+  color: white;
+  margin-bottom: 1px;
+  font-size: 16px;
+}
+
+/* Input Box */
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+}
+
+.input-box label {
+  color: #B2B2B2;
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Input Wrapper */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: transparent; /* removes background */
+  border: 1px solid white;       /* adds white border */
+  border-radius: 10px;
+  padding: 0 12px;
+  height: 48px;
+}
+
+/* Lock Icon */
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 61%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+
+
+/* Input Field */
+.input-wrapper input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Eye Icon Button */
+.show-password-btn {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.eye {
+  font-size: 18px;
+}
+
+/* Update Button */
+.update-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background: linear-gradient(to right, #6977E0, #7551AA);
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+
+.update-btn:hover {
+  opacity: 0.9;
+}
