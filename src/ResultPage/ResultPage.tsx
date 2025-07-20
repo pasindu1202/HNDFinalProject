@@ -39,9 +39,11 @@ const ResultPage: React.FC = () => {
 
             </div>
             <div className="tags">
+                <h1>Skill</h1>
               <span>Node JS</span><span>MongoDB</span><span>Angular</span><span>React</span><span>UI / UX</span>
             </div>
             <div className="education">
+                <h1>Education</h1>
               <p>Bsc. in Software Engineering<br />Harvard University, USA</p>
               <p>Msc. in Information Security<br />Harvard University, USA</p>
             </div>
