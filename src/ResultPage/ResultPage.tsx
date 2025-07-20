@@ -68,7 +68,7 @@ if (data[0].value >= 75) {
           <div className="profile-card">
             <h4>Skills</h4>
             <div className="tags">
-              <span>Node JS</span><span>MongoDB</span><span>Angular</span><span>React</span><span>UI / UX</span>
+                <span>Node JS</span><span>MongoDB</span><span>Angular</span><span>React</span><span>UI / UX</span>
             </div>
             <h4>Education</h4>
             <div className="education">

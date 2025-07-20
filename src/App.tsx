@@ -10,8 +10,8 @@ import HomePage from './HomePage/HomePage';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import CVAnalyzer from './CVAnalyzer/CVAnalyzer';
-import ProfileForm from './ProfileForm/ProfileForm';
 import ResultPage from './ResultPage/ResultPage';
+import MultiResult from './MultiResult/MultiResult';
 
 
 const stripePromise = loadStripe("APIKey"); 
@@ -37,8 +37,14 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/hpage" element={<HomePage/>}/>
         <Route path="/cv-analyzer" element={<CVAnalyzer/>}/>
-        <Route path="/profile" element={<ProfileForm />} />
-        <Route path="/result" element={<ResultPage/>} />
+        <Route path="/result" element={<ResultPage />} />
+        <Route path="/multi-result" element={<MultiResult />} />
+        
+        {/* Add more routes as needed */}
+        {/* <Route path="/profile-form" element={<ProfileForm />} /> */}
+        {/* <Route path="/multi-result" element={<MultiResult />} /> */}
+      
+        
         
         {/* Add more routes as needed */}
       </Routes>
