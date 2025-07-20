@@ -21,7 +21,7 @@ type PaymentFormInputs = {
     cardNumber: string;
     expiryDate: string;
     cvv: string;
-    cardHolderName: string;
+    cardHolderName: string;  
     country: string;
     zipCode: string;
 
